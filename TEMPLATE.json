@@ -1,0 +1,43 @@
+{
+  "id": "business-frontpage",
+  "title": "Business website",
+  "category": "Client Tools",
+  "upstreamRepository": "StartBootstrap/startbootstrap-business-frontpage",
+  "upstreamCommit": "b330ff68d31fca0950dcce5687796d71432fbd5f",
+  "upstreamUrl": "https://codeload.github.com/StartBootstrap/startbootstrap-business-frontpage/zip/b330ff68d31fca0950dcce5687796d71432fbd5f",
+  "upstreamSha256": "bef5e7cfdef05444956f88e339d362671208c71dd2496578279be3e4c1f07422",
+  "upstreamBytes": 103523,
+  "license": "MIT",
+  "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
+  "upstreamUpdated": "2023-05-24T01:44:10Z",
+  "archived": false,
+  "upstreamScripts": {
+    "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+    "build:assets": "node scripts/build-assets.js",
+    "build:pug": "node scripts/build-pug.js",
+    "build:scripts": "node scripts/build-scripts.js",
+    "build:scss": "node scripts/build-scss.js",
+    "clean": "node scripts/clean.js",
+    "start": "npm run build && node scripts/start.js",
+    "start:debug": "npm run build && node scripts/start-debug.js"
+  },
+  "upstreamDependencies": {
+    "bootstrap": "5.2.3"
+  },
+  "summary": "A small-business website with service cards, sample pricing, testimonials and a sample contact form.",
+  "features": [
+    "Service and pricing sections",
+    "Responsive business layout",
+    "Sample contact form; no email service"
+  ],
+  "reviewDate": "2026-10-14",
+  "adaptations": [
+    "Use upstream prebuilt HTML/CSS/JS as editable source; no build toolchain required",
+    "Replace all bundled images, logos and illustrations with original SVG sample artwork",
+    "Remove SB Forms runtime and API-token attributes; explicitly label sample forms and content",
+    "Add a dependency-free local server with a public-file allowlist"
+  ],
+  "replacedAssets": [
+    "assets/favicon.ico"
+  ]
+}
